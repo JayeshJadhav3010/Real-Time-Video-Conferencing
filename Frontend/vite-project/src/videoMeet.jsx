@@ -13,9 +13,10 @@ import { useEffect } from "react";
 import { Button,TextField,IconButton,Badge } from '@mui/material';
 import io from "socket.io-client";
 import { useNavigate } from "react-router-dom";
+import server from "./environment";
 
 
-const server_url="http://localhost:8000";
+const server_url=server;
 
 var connections={};
 
